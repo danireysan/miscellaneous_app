@@ -2,6 +2,8 @@ import 'package:flutter/material.dart';
 import 'package:go_router/go_router.dart';
 import 'package:miscellaneous_app/presentation/screens.dart';
 
+import '../../presentation/screens/pokemon/pokemons_screen.dart';
+
 class MenuItem {
   final String title;
   final IconData icon;
@@ -17,28 +19,33 @@ class MenuItem {
 const List<MenuItem> items = [
   MenuItem(
     title: 'Girosopio',
-    icon: Icons.home,
+    icon: Icons.downloading,
     route: GyroscopeScreen.routeName,
   ),
   MenuItem(
     title: 'Girosopio Bola',
-    icon: Icons.home,
+    icon: Icons.sports_baseball_outlined,
     route: GyroBallScreen.routeName,
   ),
   MenuItem(
     title: 'Acelerometro',
-    icon: Icons.info,
+    icon: Icons.speed,
     route: AccelerometerScreen.routeName,
   ),
   MenuItem(
     title: 'Magnetometro',
-    icon: Icons.contact_page,
+    icon: Icons.explore_outlined,
     route: MagnetometerScreen.routeName,
   ),
   MenuItem(
     title: 'Brújula',
-    icon: Icons.settings,
+    icon: Icons.explore,
     route: CompassScreen.routeName,
+  ),
+  MenuItem(
+    title: 'Pokemons',
+    icon: Icons.catching_pokemon,
+    route: PokemonsScreen.routeName,
   ),
 ];
 

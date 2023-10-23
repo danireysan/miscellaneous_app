@@ -1,7 +1,7 @@
-export 'home/home_screen.dart';
-export 'permissions/permissions_screen.dart';
-export 'sensors/accelerometer_screen.dart';
-export 'sensors/ball_gyroscope_screen.dart';
-export 'sensors/gyroscope_screen.dart';
-export 'sensors/magnetometer_screen.dart';
-export 'sensors/compass_screen.dart';
+export 'screens/home/home_screen.dart';
+export 'screens/permissions/permissions_screen.dart';
+export 'screens/sensors/accelerometer_screen.dart';
+export 'screens/sensors/ball_gyroscope_screen.dart';
+export 'screens/sensors/gyroscope_screen.dart';
+export 'screens/sensors/magnetometer_screen.dart';
+export 'screens/sensors/compass_screen.dart';

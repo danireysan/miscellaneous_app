@@ -1,5 +1,7 @@
 import 'package:go_router/go_router.dart';
 
+import '../../presentation/screens/pokemon/pokemon_screen.dart';
+import '../../presentation/screens/pokemon/pokemons_screen.dart';
 import '../../presentation/screens.dart';
 
 final router = GoRouter(
@@ -31,6 +33,21 @@ final router = GoRouter(
     GoRoute(
       path: CompassScreen.routeName,
       builder: (context, state) => const CompassScreen(),
+    ),
+    GoRoute(
+      path: PokemonsScreen.routeName,
+      builder: (context, state) => const PokemonsScreen(),
+      routes: [
+        GoRoute(
+          path: ':id',
+          builder: (context, state) {
+            final int id =
+                int.tryParse(state.pathParameters['id'] as String) ?? 0;
+
+            return PokemonScreen(id: id);
+          },
+        ),
+      ],
     ),
   ],
 );

@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 
-import '../providers/sensors/gyroscope_provider.dart';
+import '../../providers/sensors/gyroscope_provider.dart';
 
 class GyroscopeScreen extends ConsumerWidget {
   static const String routeName = '/gyroscope';

@@ -1,10 +1,8 @@
-import 'dart:math' show pi;
-
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
-import 'package:miscellaneous_app/presentation/permissions/ask_permission_view.dart';
+import 'package:miscellaneous_app/presentation/screens/permissions/ask_permission_view.dart';
 
-import '../providers/providers.dart';
+import '../../providers/providers.dart';
 
 class CompassScreen extends ConsumerWidget {
   static const String routeName = '/compass';
