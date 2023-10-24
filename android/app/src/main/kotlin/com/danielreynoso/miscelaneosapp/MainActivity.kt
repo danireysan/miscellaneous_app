@@ -1,4 +1,4 @@
-package com.example.miscellaneous_app
+package com.danielreynoso.miscelaneosapp
 
 import io.flutter.embedding.android.FlutterActivity
 
