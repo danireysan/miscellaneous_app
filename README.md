@@ -3,8 +3,7 @@
 Renombrar app ID
 
 ```
-    flutter pub run change_app_package_name:main com.danielreynoso.miscelaneosapp
-```
+    flutter pub run change_app_package_name:main w
 
 Generar sha-256
 ```
