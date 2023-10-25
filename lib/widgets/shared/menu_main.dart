@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:go_router/go_router.dart';
 import 'package:miscellaneous_app/presentation/screens.dart';
 
+import '../../presentation/screens/biometrics/biometrics_screen.dart';
 import '../../presentation/screens/pokemon/pokemons_screen.dart';
 
 class MenuItem {
@@ -46,6 +47,11 @@ const List<MenuItem> items = [
     title: 'Pokemons',
     icon: Icons.catching_pokemon,
     route: PokemonsScreen.routeName,
+  ),
+  MenuItem(
+    title: 'Biometrics',
+    icon: Icons.fingerprint,
+    route: BiometricsScreen.routeName,
   ),
 ];
 

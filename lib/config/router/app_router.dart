@@ -1,4 +1,5 @@
 import 'package:go_router/go_router.dart';
+import 'package:miscellaneous_app/presentation/screens/biometrics/biometrics_screen.dart';
 
 import '../../presentation/screens/pokemon/pokemon_screen.dart';
 import '../../presentation/screens/pokemon/pokemons_screen.dart';
@@ -49,5 +50,9 @@ final router = GoRouter(
         ),
       ],
     ),
+    GoRoute(
+      path: BiometricsScreen.routeName,
+      builder: (context, state) => const BiometricsScreen(),
+    )
   ],
 );

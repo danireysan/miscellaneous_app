@@ -21,10 +21,10 @@ class HomeScreen extends StatelessWidget {
           ),
         ],
       ),
-      body: CustomScrollView(
+      body: const CustomScrollView(
         slivers: [
           SliverAppBar(
-            title: const Text('Miscelaneos'),
+            title: Text('Miscelaneos'),
           ),
           MainMenu(),
         ],
