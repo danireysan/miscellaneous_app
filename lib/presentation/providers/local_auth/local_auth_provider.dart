@@ -32,11 +32,8 @@ class LocalAuthState {
   }
 
   @override
-  String toString() => '''
-      didAuthenticate: $didAuthenticate, 
-      status: $status, message: 
-      $message)
-      ''';
+  String toString() =>
+      '''\n didAuthenticate: $didAuthenticate, \n status: $status, \n message: $message''';
 }
 
 class LocalAuthNotifier extends StateNotifier<LocalAuthState> {
