@@ -9,3 +9,7 @@ export 'compass/compass_provider.dart';
 export 'pokemon/pokemons_list_provider.dart';
 
 export 'local_auth/local_auth_provider.dart';
+
+export 'location/user_location_provider.dart';
+
+export 'location/watch_location_provider copy.dart';

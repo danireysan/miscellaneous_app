@@ -53,6 +53,21 @@ const List<MenuItem> items = [
     icon: Icons.fingerprint,
     route: BiometricsScreen.routeName,
   ),
+  MenuItem(
+    title: 'Localización',
+    icon: Icons.location_on_outlined,
+    route: LocationScreen.routeName,
+  ),
+  MenuItem(
+    title: 'Mapa Controlado',
+    icon: Icons.gamepad_outlined,
+    route: PermissionsScreen.routeName,
+  ),
+  MenuItem(
+    title: 'Mapa',
+    icon: Icons.map_outlined,
+    route: MapScreen.routeName,
+  ),
 ];
 
 class MainMenu extends StatelessWidget {
