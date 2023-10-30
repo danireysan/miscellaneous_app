@@ -1,7 +1,10 @@
 import 'package:flutter/material.dart';
 import 'package:go_router/go_router.dart';
 import 'package:miscellaneous_app/presentation/screens.dart';
+import 'package:miscellaneous_app/presentation/screens/ads/add_rewarded.dart';
 
+import '../../presentation/screens/ads/add_fullscreen.dart';
+import '../../presentation/screens/badge/badge_screen.dart';
 import '../../presentation/screens/biometrics/biometrics_screen.dart';
 import '../../presentation/screens/pokemon/pokemons_screen.dart';
 
@@ -68,6 +71,21 @@ const List<MenuItem> items = [
     icon: Icons.map_outlined,
     route: MapScreen.routeName,
   ),
+  MenuItem(
+    title: 'Badge',
+    icon: Icons.notification_important,
+    route: BadgeScreen.routeName,
+  ),
+  MenuItem(
+    title: 'Ad full',
+    icon: Icons.ad_units_rounded,
+    route: AdsFullScreen.routeName,
+  ),
+  MenuItem(
+    title: 'Ads rewards',
+    icon: Icons.fort_sharp,
+    route: AdsRewarded.routeName,
+  )
 ];
 
 class MainMenu extends StatelessWidget {

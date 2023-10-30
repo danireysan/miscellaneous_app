@@ -10,23 +10,29 @@ class HomeScreen extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(
-        title: const Text('Miscellaneous App'),
-        actions: [
-          IconButton(
-            onPressed: () {
-              context.push(PermissionsScreen.routeName);
-            },
-            icon: const Icon(Icons.settings),
+      body: Column(
+        children: [
+          Expanded(
+            child: Padding(
+              padding: const EdgeInsets.all(10.0),
+              child: CustomScrollView(
+                slivers: [
+                  SliverAppBar(
+                    title: const Text('Miscelaneos'),
+                    actions: [
+                      IconButton(
+                        onPressed: () {
+                          context.push(PermissionsScreen.routeName);
+                        },
+                        icon: const Icon(Icons.settings),
+                      ),
+                    ],
+                  ),
+                  const MainMenu(),
+                ],
+              ),
+            ),
           ),
-        ],
-      ),
-      body: const CustomScrollView(
-        slivers: [
-          SliverAppBar(
-            title: Text('Miscelaneos'),
-          ),
-          MainMenu(),
         ],
       ),
     );

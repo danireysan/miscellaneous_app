@@ -1,4 +1,7 @@
 import 'package:go_router/go_router.dart';
+import 'package:miscellaneous_app/presentation/screens/ads/add_fullscreen.dart';
+import 'package:miscellaneous_app/presentation/screens/ads/add_rewarded.dart';
+import 'package:miscellaneous_app/presentation/screens/badge/badge_screen.dart';
 import 'package:miscellaneous_app/presentation/screens/biometrics/biometrics_screen.dart';
 
 import '../../presentation/screens/pokemon/pokemon_screen.dart';
@@ -65,6 +68,18 @@ final router = GoRouter(
     GoRoute(
       path: ControlledMapScreen.routeName,
       builder: (context, state) => const ControlledMapScreen(),
+    ),
+    GoRoute(
+      path: BadgeScreen.routeName,
+      builder: (context, state) => const BadgeScreen(),
+    ),
+    GoRoute(
+      path: AdsFullScreen.routeName,
+      builder: (context, state) => const AdsFullScreen(),
+    ),
+    GoRoute(
+      path: AdsRewarded.routeName,
+      builder: (context, state) => const AdsRewarded(),
     )
   ],
 );
