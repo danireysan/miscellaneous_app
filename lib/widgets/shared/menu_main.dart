@@ -61,7 +61,7 @@ const List<MenuItem> items = [
   MenuItem(
     title: 'Mapa Controlado',
     icon: Icons.gamepad_outlined,
-    route: PermissionsScreen.routeName,
+    route: ControlledMapScreen.routeName,
   ),
   MenuItem(
     title: 'Mapa',
